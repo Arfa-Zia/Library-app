@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    background-color: rgba(95, 158, 160, 0.616);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+header > h2 {
+    font-size: 40px;
+    font-family: nosifer , 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 70px ;
+}
+header > button {
+    font-size: 20px;
+    padding: 7px;
+    margin-right: 50px;
+    background-color: aliceblue;
+    color: cadetblue;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100px;
+    border: 2px solid black;
+
+}
+header > button:hover {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+.container {
+    background-color: aliceblue;
+}
+.container > p {
+    text-align: center;
+    font-family: Satisfy , 'Times New Roman', Times, serif;
+    font-size: 25px;
+    align-self: center;
+    margin: 20px;
+}
+.container > button {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    align-self: flex-start;
+    padding: 7px;
+    justify-self: center;
+    background-color: aliceblue;
+    color: cadetblue;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 5px 0 20px 44%;
+}
+
+.container > button:hover {
+background-color: black;
+transition: all 0.3s ease-in-out;
+}
+.cards {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 100px 30px 100px ;
+}
+.card {
+    border:  2px solid black;
+    height: 250px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding-inline: 20px;
+    font-family: 'patua one' , 'Times New Roman', Times, serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.btns > button {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-self: center;
+    padding: 5px;
+    color: aliceblue;
+    background-color: cadetblue;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px; 
+    border: 2px  solid rgba(0, 0, 0, 0.678);
+}
+.btns > button:hover {
+    color: cadetblue;
+    background-color: black;
+    transition: all .3s ease-in-out; 
+}
+#read:hover , #un-read:hover {
+    cursor: pointer;
+    background-color: black;
+    color: cadetblue;
+}
+#read {
+ background-color: rgba(0, 128, 0, 0.568);
+ color: black;
+}
+#un-read{
+  background-color: rgba(255, 0, 0, 0.473);
+  color: black;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 10px;
+    list-style: none;
+}
+
+.fa {
+    transition: transform .3s ease-in-out;
+    font-size: 20px;
+}
+ .fa-github:hover{
+    transform: rotate(360deg) scale(1.2);
+    color: cadetblue;
+}
+footer > ul > li > a {
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+input{
+   height: 25px;
+   width: 200px;
+   font-size: 18px;
+   font-family: 'patua one' , 'Times New Roman', Times, serif;
+   background-color: aliceblue;
+   border-radius: 5px;
+   border: none;
+   padding: 5px;
+}
+label{
+    font-size: 18px;
+    font-family: 'patua one' ,'Times New Roman', Times, serif;
+    margin: none;
+}
+#read-status-check {
+    height: 15px;
+    padding: none;
+    width: 30px;
+    margin-top : 4px;
+}
+input:focus{
+ outline: none;
+}
+
+form > h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'patua one' , 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#form-btns > button {
+
+    text-align: center;
+    font-family:'patua one','Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 80px; 
+    margin: 5px;
+    border: none;
+}
+#form-btns > button:hover {
+    color: cadetblue;
+    background-color: black;
+    transition: all .3s ease-in-out; 
+}
+dialog{
+    position: relative;
+    top: 30%;
+    left: 38%;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 cadetblue;
+    border: 3px solid black;
+    background-color: rgb(212, 229, 245);
+}
+dialog::backdrop{
+    background-color: black;
+    opacity: .5;
+}
