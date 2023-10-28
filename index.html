@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer|Satisfy|Philosopher|Patua One">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Library</title>
+    <link rel="website icon" type = "png" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png">
 </head>
 <body>
+    <header>
+        <h2>Library</h2>
+        <button type="button">Log In</button>
+    </header>
+    <main >
+        <div class="container">
+        <p id="desp">Welcome to your personal library space!</p>
+        <button type="button" id="add-book">Add Book</button>
+
+            <dialog>
+
+            <form >
+                <h3>Add a new book</h3>
+                <label for="title">
+                    <input type="text" name="title" id="title" placeholder="Title" required>
+                </label>
+                <label for="author">
+                    <input type="text" name="author" id="author" placeholder="Author" required>
+                </label>
+                <label for="pages">
+                    <input type="number" name="pages" id="pages" placeholder="Pages" required>
+                </label>
+                <div id="for-read">
+                    <label for="read-status-check">Have you read it?
+                    </label>
+                        <input type="checkbox" id="read-status-check" name="read-status-check" >
+                </div>
+                <div id="form-btns">
+                    <button formmethod="dialog" id="save-book">Save</button>
+                    <button  formmethod ='dialog' id="cancel">Cancel</button>
+                </div>
+            </form>
+
+            </dialog>
+
+             <div class="cards"></div>      
+      </div>
+    </main>
+
+    <footer>
+     <ul>
+        <li>Copyright  <i class="fa fa-copyright"></i> 
+        <script>
+            document.write(new Date().getFullYear())
+          </script></li>
+        <li>Arfa Zia  <a href="" target="_blank"> <i class="fa fa-github"></i> </a></li>
+     </ul>
+    </footer>
+    
     
 </body>
 </html>
