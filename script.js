@@ -1,3 +1,13 @@
+// Book class with a constructor that is used to make all the info submitted into a book object.
+class book{
+    constructor(title , author , pages , read ){
+        this.title=title;
+        this.author=author;
+        this.pages=pages;
+        this.read=read; 
+    }
+
+}
 // All the DOM methods are selected
 
 const addBookBtn = document.querySelector('#add-book')
@@ -39,15 +49,6 @@ cancelSave.addEventListener('click' , () =>{
     bookForm.close();
 })
 
-// Book constructor function that is used to make all the info submitted into a book object.
-function book( title , author , pages , read ){
-    
-  this.title=title;
-  this.author=author;
-  this.pages=pages;
-  this.read=read;
-
-}
 
 // Function that will add the book object into the library array.
 function addBookToLibrary(){
